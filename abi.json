@@ -1,0 +1,97 @@
+[
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      { "type": "uint256", "name": "" },
+      { "type": "string", "name": "" },
+      { "type": "string", "name": "" }
+    ],
+    "name": "tokeninfo",
+    "inputs": [{ "type": "address", "name": "_tokenaddr" }],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [],
+    "name": "losttokens",
+    "inputs": [{ "type": "address", "name": "token" }],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [{ "type": "string", "name": "" }],
+    "name": "deleteoffer",
+    "inputs": [{ "type": "uint24", "name": "_offerid" }],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [{ "type": "uint24", "name": "" }],
+    "name": "makeoffer",
+    "inputs": [
+      { "type": "address", "name": "_offertoken" },
+      { "type": "address", "name": "_buyertoken" },
+      { "type": "uint256", "name": "_price" },
+      { "type": "uint24", "name": "_offerid" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      { "type": "address", "name": "" },
+      { "type": "address", "name": "" },
+      { "type": "address", "name": "" },
+      { "type": "uint256", "name": "" },
+      { "type": "uint256", "name": "" }
+    ],
+    "name": "showoffer",
+    "inputs": [{ "type": "uint24", "name": "_offerid" }],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [{ "type": "uint256", "name": "" }],
+    "name": "pricepreview",
+    "inputs": [
+      { "type": "uint24", "name": "_offerid" },
+      { "type": "uint256", "name": "_amount" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [{ "type": "string", "name": "" }],
+    "name": "buy",
+    "inputs": [
+      { "type": "uint24", "name": "_offerid" },
+      { "type": "uint256", "name": "_offertokenamount" },
+      { "type": "uint256", "name": "_price" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [{ "type": "uint24", "name": "" }],
+    "name": "getoffercount",
+    "inputs": [],
+    "constant": true
+  },
+  { "type": "fallback", "stateMutability": "payable", "payable": true }
+]
