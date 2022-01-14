@@ -26,6 +26,12 @@
 
 RealT Alert System for Swapcat
 
+- Check .env variables (EMAIL, EMAIL_PASSWORD, CUSTOM_PROVIDER, JSON_EMAIL_LIST_URL,PORT)
+- npoint for json emails endpoint
+- https://account.anyblock.tools/auth/login/ anyblock for custom provider (RPC) to be safe because you spam a lot
+
+  GL HF
+
 ## Installation
 
 ```bash
@@ -61,12 +67,6 @@ $ npm run test:cov
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
